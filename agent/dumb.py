@@ -9,17 +9,16 @@ import random
 from agent import Agent
 
 class DumbAgent(Agent):
-    def __init__(self, p):
-        Agent.__init__(self, p)
     
     def select_move(self, game_state):
         return random.choice(game_state.legal_moves())
     
-    def load(self):
+    def load(self, path):
+        self.path = path
         print("pretend to load")
         
     def save(self):
         print("pretend to save")
         
-    def update(self):
+    def update(self, result):
         print("pretend to update")
