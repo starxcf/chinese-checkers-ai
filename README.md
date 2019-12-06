@@ -3,7 +3,7 @@
 ### Project by Sean Xiong, Bill Zizek, and Alexandra Yue
 ### SCS 3547 - Intelligent Agents & Reinforcement Learning
 
-## Description
+# Description
 
 Herein, we've designed a Python-based program to evaluate the playing performance and strategy of various intelligent agents on different board games. Each board game has a unique configuration of a board, playing pieces,  and rules. Stemming from this, each game has a unique strategy to maximize success in winning the game. Considering the technical and time requirements of training, optimization, and other factors, we propose analyzing intelligent agents in a simple micro-environment before scaling to a larger, more complex environment. To begin with, the intelligent agent's performance will be screened using the rules and board for **Hexapawn**. Certain AI will then be selected after critical evaluation and tested using a larger and more complex playing environment in **Chinese Checkers**. 
 
