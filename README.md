@@ -1,12 +1,25 @@
-# Chinese Checkers AI
-by Sean, Bill and Alexandra
+# Strategy Board Game Playing Artificial Intelligence Agent
 
-Practice Python program playing Chinese Checkers for a course project
+### Project by Sean Xiong, Bill Zizek, and Alexandra Yue
+### SCS 3547 - Intelligent Agents & Reinforcement Learning
 
-**The Goal:** Support multiple different approaches of AI
+## Description
 
-# Detail status
+Herein, we've designed a Python-based program to evaluate the playing performance and strategy of various intelligent agents on different board games. Each board game has a unique configuration of a board, playing pieces,  and rules. Stemming from this, each game has a unique strategy to maximize success in winning the game. Considering the technical and time requirements of training, optimization, and other factors, we propose analyzing intelligent agents in a simple micro-environment before scaling to a larger, more complex environment. To begin with, the intelligent agent's performance will be screened using the rules and board for **Hexapawn**. Certain AI will then be selected after critical evaluation and tested using a larger and more complex playing environment in **Chinese Checkers**. 
 
-The program fow now only contains working rule for Hexapawn to begin with. This game is much simpler than Chinese Checkers so that we could efficiently try out some simple algorithm before going to advanced ones.
+The **objectives** of this work are two-fold:
+1. Support multiple game environments (Hexapawn and Chinese Checkers)
+2. Support multiple Intelligent Agents (AI) of varying degree of sophistication
 
-There are two entry points for the program: `play*.py` and `train*.py`. As the name suggested, play is using the AI defined in this file to do actual play, could be either with human or computer or both. `train*.py` is for the AI to learn by playing with itself or other AI.
+# Instructions
+
+There are two entry points for the program depending on the board game selected:  `play*.py`  and  `train*.py`.  We suggest starting with Hexapawn.
+
+Play can then be done with a human player, computer player, or both. `train*.py` is then intended for the AI to learn by playing with itself or other AI.
+
+# Methods
+**Delete this line upon update**: Explanation of the specific techniques used and how they fit together, Explanation of engineering trade-offs made in designing the agent
+
+# Analysis
+
+**Delete this line upon update**: Analysis of the performance of the agent.
