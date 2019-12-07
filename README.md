@@ -2,6 +2,7 @@
 
 ### Project by Sean Xiong, Bill Zizek, and Alexandra Yue
 ### SCS 3547 - Intelligent Agents & Reinforcement Learning
+### https://github.com/starxcf/chinese-checkers-ai.git
 
 # Description
 
