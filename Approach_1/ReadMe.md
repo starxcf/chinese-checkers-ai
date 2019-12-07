@@ -1,6 +1,6 @@
 ## Approach_1 
 
-#Simple approach for SCS 3547 Group Project: Chinese Checker using Reinforcement Learning 
+#Simple approach for Strategy Board Game Playing Artificial Intelligence Agent 
 - This is the repository for a Chinese Checkers agent trained with heuristics-guided Reinforcement Learning and Monte Carlo Tree Search.
 - Code source is from https://github.com/JayGeisler/MonteCarlo_ChineseCheckers.git
 
