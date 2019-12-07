@@ -23,6 +23,6 @@ One technique applied to both board games will be a heuristics-guided Reinforcem
 
 In the Approach_1, three kinds of player have been designed for comparison purpose: random player that moves randomly, greedy player that moves to highest value point every time, an AI player with intelligent moves. When the AI Player is against with the randon player, AI player always win. When AI Player is against with the greedy player, AI player still have a higher chance to win than the greedy player for a long run. 
 
-In the Approach_2, AI Player is well trained for hundres games against itself, hence it has a high chance to beat the Greedy player for a long run. 
+In the Approach_2, AI Player is more sophisticated and well trained for hundres games against itself, hence it has a high chance to beat the Greedy player for a long run. 
 
 In both cases, AI Player has higher chance to win the game when competing with other player. 
