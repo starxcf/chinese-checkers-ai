@@ -1,20 +1,23 @@
-#Approach_2
+# Approach_2
+
+## Heuristics-guided Reinforcement Learning and Monte Carlo Tree Search
+
 -	Second approach for Strategy Board Game Playing Artificial Intelligence Agent 
 -	Source Code is from https://github.com/kenziyuliu/PythonChineseCheckers.git` in your terminal
 
-There are couple reinforcement learning techniques that were implemented in this project to teach an agent to learn how to play Chinese Checker. Three kinds of player have been designed for comparison purpose: random player that moves randomly, greedy player that moves to highest value point every time, an AI player with intelligent moves. 
+Three kinds of player have been designed for comparison against each other: a `random player` that moves randomly, a `greedy player` that moves to the highest value point each move, and an AI player with intelligent movements guided by Monte Carlo Tree Search (MCTS).
 
-#Setting and Framework
-Board.py, Board.utils.py, data_generators.py, evaluate_models.py contains setting for the board, default framework, and some utilise
+## Setting and Framework
+Board.py, Board.utils.py, data_generators.py, evaluate_models.py contain the settings for the board, default framework, and some utilities. 
 
-#Player.py
-It contains algorithm for Greedy player and AI Player
+## Player.py
+Contains the algorithm for the Greedy player and AI Player.
 
-#Game.py
-It runs the chinese checker between AI player and Greedy player for 10000 times. 
+## Game.py
+It runs the chinese checker game board between an AI player and Greedy player for 10000 iterations. 
 
-#Train.py and Train_on_greedy.py
-It contains the self-training and generate the game 
+## Train.py and Train_on_greedy.py
+It contains the self-training code and generates the game. 
 
-#MCTS.py
-It contains fundation logics for Monte Carlo Tree Search 
+## MCTS.py
+It contains foundation logic for Monte Carlo Tree Search.
