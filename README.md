@@ -20,3 +20,9 @@ Play can then be done with a human player, computer player, or both. `train*.py`
 # Methods and Analysis
 
 One technique applied to both board games will be a heuristics-guided Reinforcement Learning and Monte Carlo Tree Search (MCTS). The general idea behind a MCTS is simple - given the state of the game, choose the most promising move. A MCTS consists of four phsaes: selection, expansion, simulation, and backpropagation. The algorithm starts at a root node and moves down the action tree until a leaf node is reached. Then, if the leaf node does not terminate the game then more child nodes are created according to available actions. Next the simulation phase involves taking random actions to get to a new state. This is done until a terminal state is reached. The value of the terminal state is then back propagated and the involved nodes are updated with the simulation results while tracking the number of visits to each node. MCTS search doesn't require anby knowledge about the domain but can take many iterations to converge to a good solution.
+
+In the Approach_1, three kinds of player have been designed for comparison purpose: random player that moves randomly, greedy player that moves to highest value point every time, an AI player with intelligent moves. When the AI Player is against with the randon player, AI player always win. When AI Player is against with the greedy player, AI player still have a higher chance to win than the greedy player for a long run. 
+
+In the Approach_2, AI Player is well trained for hundres games against itself, hence it has a high chance to beat the Greedy player for a long run. 
+
+In both cases, AI Player has higher chance to win the game when competing with other player. 
