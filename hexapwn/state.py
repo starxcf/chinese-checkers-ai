@@ -10,8 +10,8 @@ import copy
 __all__ = [
     'GameState',
 ]
-
-from hexapwn.board import Board, Player, MoveType, Point, Move
+from gameplay import Player, MoveType, Point, Move
+from hexapwn.board import Board
 
 class GameState:
     def __init__(self, board, next_player, move):
