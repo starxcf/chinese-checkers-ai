@@ -5,15 +5,13 @@ Game board definition and position checking
 @author: seanxiong
 """
 
-import enum
+import enum,copy
 from gameplay import Point
 
 __all__ = [
     'Board',
     'Player',
 ]
-
-COL_NAMES = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 class Player(enum.Enum):
     black = 1
@@ -27,7 +25,7 @@ class Board:
     def __init__(self, size):
         assert(size > 2 and size < 27)
         self.size = size
-        self._grid = {}        
+        self._grid = {}
         for c in tuple(range(1, size + 1)):
             self._grid[Point(1, c)] = Player(Player.black)
             self._grid[Point(size, c)] = Player(Player.white)

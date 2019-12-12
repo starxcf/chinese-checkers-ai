@@ -13,6 +13,8 @@ __all__ = [
 ]
 
 import re
+from gameplay import Point
+from hexapwn.board import Board, Player
 
 def checkcode(code):
     ''' Check to see if input is legal'''
@@ -41,7 +43,7 @@ def gameend(game):
     else:
         print('Winner: ' + str(winner))
         
-def printboard(board, colnames):
+def printboard(board:Board, colnames):
     col_or_rows = tuple(range(1, board.size + 1))
     print('  ', end = '')
     for c in col_or_rows:
