@@ -31,6 +31,7 @@ class Move:
     invalid_point = Point(0, 0)
     
     def __init__(self, mfrom, op, mto):
+        assert(mfrom == mto)
         self.movefrom = mfrom
         self.operation = op
         self.moveto = mto

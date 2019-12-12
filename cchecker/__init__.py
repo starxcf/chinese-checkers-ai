@@ -2,4 +2,3 @@
 from cchecker.board import *
 from cchecker.state import *
 from cchecker.interface import *
-from cchecker.play import *
