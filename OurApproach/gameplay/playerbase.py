@@ -38,3 +38,4 @@ class GamePlayer:
             return src.playerside == self.playerside
         else:
             return False
+        

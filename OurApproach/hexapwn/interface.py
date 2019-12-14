@@ -13,6 +13,8 @@ __all__ = [
 ]
 
 import re
+from gameplay import Point
+from hexapwn.board import Board, Player
 
 def checkcode(code):
     ''' Check to see if input is legal'''
@@ -40,3 +42,24 @@ def gameend(game):
         print("Something went wrong, there should not be a draw.")
     else:
         print('Winner: ' + str(winner))
+        
+def printboard(board:Board, colnames):
+    col_or_rows = tuple(range(1, board.size + 1))
+    print('  ', end = '')
+    for c in col_or_rows:
+        print(' ', colnames[c-1], end='')
+    print('\n--', end='')
+    for c in col_or_rows:
+        print('---', end='')
+    print('')
+    for row in col_or_rows:
+        pieces = []
+        for col in col_or_rows:
+            piece = board.get(Point(row, col))
+            if piece == Player.white:
+                pieces.append('W')
+            elif piece == Player.black:
+                pieces.append('B')
+            else:
+                pieces.append(' ')
+        print('%d|  %s' % (row, '  '.join(pieces)))

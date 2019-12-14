@@ -11,7 +11,8 @@ __all__ = [
     'GameState',
 ]
 
-from hexapwn.board import Board, Player, MoveType, Point, Move
+from gameplay import MoveType, Point, Move
+from hexapwn.board import Board, Player
 
 class GameState:
     def __init__(self, board, next_player, move):
@@ -30,6 +31,9 @@ class GameState:
         next_board.remove(self.next_player, move.movefrom)
         return GameState(next_board, self.next_player.other, move)
 
+    def copy(self): 
+        return copy.deepcopy(self) 
+    
     @classmethod
     def new_game(cls, board_size):
         board = Board(board_size)
