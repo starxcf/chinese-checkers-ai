@@ -19,6 +19,8 @@ There are two entry points for the program depending on the board game selected:
 
 Play can then be done with a human player, computer player, or both. `train*.py` is then intended for the AI to learn by playing with itself or other AI.
 
+![play animation](./checkers.gif)
+
 # Methods and Analysis to the referenced works
 
 In the Approach_1, three kinds of player types have been designed for comparison: `random player` that moves randomly, `greedy player` that moves to highest value point every time, and an `AI player` with intelligent movements based on training. The `AI player` is powered by a very simple Monte Carlo (MC) simulation. In a MC simulation, you play the game by starting in a random state (not necessarily the beginning) and play until the end while recording states, actions, and rewards within the confines of the game. A caveat with a simple MC approach is that there is no guarantee it will actually visit all the possible states of the game. However in our analysis, the AI player consistently outperformed the random player in all test cases. Based on the engineering of the intelligent AI player, over the long run the AI player will have a higher win % than the greedy player.
